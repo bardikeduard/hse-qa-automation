@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 10 13:35:19 UTC 2025","Mon Mar 10 13:35:22 UTC 2025","2750","Surefire suite","Surefire test","tests.CheckoutTest","tests.CheckoutTest","createOrderWithoutCredentials","createOrderWithoutCredentials",""
+"passed","Mon Mar 10 13:35:23 UTC 2025","Mon Mar 10 13:35:24 UTC 2025","1191","Surefire suite","Surefire test","tests.LoginTest","tests.LoginTest","testNegativeLogin","testNegativeLogin",""
+"passed","Mon Mar 10 13:35:14 UTC 2025","Mon Mar 10 13:35:19 UTC 2025","4429","Surefire suite","Surefire test","tests.CheckoutTest","tests.CheckoutTest","createOrder","createOrder",""
+"passed","Mon Mar 10 13:35:24 UTC 2025","Mon Mar 10 13:35:25 UTC 2025","1179","Surefire suite","Surefire test","tests.LoginTest","tests.LoginTest","testPositiveLogin","testPositiveLogin",""
