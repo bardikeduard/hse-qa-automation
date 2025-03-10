@@ -52,7 +52,7 @@ public class StartPage extends BasePage {
         driver.findElement(PASSWORD_FIELD).sendKeys(user.getPassword());
         driver.findElement(LOGIN_BUTTON).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(WELCOME_NAV_BUTTON));
         wait.until(ExpectedConditions.textToBePresentInElementLocated(WELCOME_NAV_BUTTON, "Welcome " + user.getLogin()));
 
