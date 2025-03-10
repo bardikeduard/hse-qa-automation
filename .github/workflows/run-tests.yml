@@ -22,6 +22,15 @@ jobs:
 
       - name: Run tests
         run: mvn clean test
+        env:
+          p_user: ${{ secrets.P_USER }}
+          p_password: ${{ secrets.P_PASSWORD }}
+          p_credit_card: ${{ secrets.P_CREDIT_CARD }}
+          p_name: ${{ secrets.P_NAME }}
+          n_user: ${{ secrets.N_USER }}
+          n_password: ${{ secrets.N_PASSWORD }}
+          n_credit_card: ${{ secrets.N_CREDIT_CARD }}
+          n_name: ${{ secrets.N_NAME }}
 
       - name: Generate Allure Report
         run: mvn allure:report

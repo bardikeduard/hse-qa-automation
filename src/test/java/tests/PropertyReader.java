@@ -50,6 +50,10 @@ public class PropertyReader {
     }
 
     public static String getProperty(String propertyName) {
-        return loadProperties().getProperty(propertyName);
+        if (loadProperties().containsKey(propertyName) && !loadProperties().get(propertyName).toString().isEmpty()) {
+            return loadProperties().getProperty(propertyName);
+        }
+
+        return System.getenv(propertyName);
     }
 }

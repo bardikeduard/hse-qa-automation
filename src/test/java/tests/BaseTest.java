@@ -18,17 +18,17 @@ public class BaseTest {
 
     // p_ - positive
     User positiveUser = User.builder()
-            .login(System.getProperty("p_user", PropertyReader.getProperty("p_user")))
-            .password(System.getProperty("p_password", PropertyReader.getProperty("p_password")))
-            .creditCard(System.getProperty("p_credit_card", PropertyReader.getProperty("p_credit_card")))
-            .name(System.getProperty("p_name", PropertyReader.getProperty("p_name"))).build();
+            .login(PropertyReader.getProperty("p_user"))
+            .password(PropertyReader.getProperty("p_password"))
+            .creditCard(PropertyReader.getProperty("p_credit_card"))
+            .name(PropertyReader.getProperty("p_name")).build();
 
     // n_ - negative
     User negativeUser = User.builder()
-            .login(System.getProperty("n_user", PropertyReader.getProperty("n_user")))
-            .password(System.getProperty("n_password", PropertyReader.getProperty("n_password")))
-            .creditCard(System.getProperty("n_credit_card", PropertyReader.getProperty("n_credit_card")))
-            .name(System.getProperty("n_name", PropertyReader.getProperty("n_name"))).build();
+            .login(PropertyReader.getProperty("n_user"))
+            .password(PropertyReader.getProperty("n_password"))
+            .creditCard(PropertyReader.getProperty("n_credit_card"))
+            .name(PropertyReader.getProperty("n_name")).build();
 
     @BeforeMethod
     public void init() {
